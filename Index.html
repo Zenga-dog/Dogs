@@ -80,7 +80,7 @@ ul.tab li a:focus, .active {
     border-top: none;
 }
 </style>
-<body>
+
 
 <ul class="tab">
   <li><a href="#" class="tablinks" onclick="openCity(event, 'Track and Field & Cross Country')">Track and Field & Cross Country</a></li>
@@ -105,41 +105,9 @@ ul.tab li a:focus, .active {
         It was now my job as the last runner to maintain first place. I ran as fast as I could, faster than my legs could take me. If I ever felt myself slowing down, I sped up.
         I knew it was not the time to slow down at all. I curved around the track while keeping my pace. It was the last 100 meters and I was worried that the girl behind me was catching up. 
         My reaction was simple. I sped up even more. I crossed the finish line as my teammates cheered me on. We had won first place for league finals and we were going to counties. 
-        </p>
-</div>
-
-<div id="Hobbies" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France. dog</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-      </style> 
-  </head>
-
-    <body> 
-      <h1> Srushti </h1>
-        <h2>I have a love for dogs, running, playing the alto saxophone, and swimmming!</h2>
-      
-        <figure>
+        </p> 
+      <body>
+         <figure>
           <img src="https://lh3.googleusercontent.com/-6X1aNVmbz-0/VzUlL-HKfMI/AAAAAAAAFPw/bK1EkU2i634pVxNcGkrw7lpW1llNqr1EwCK8B/s512/2016-05-12.jpg" alt="3rd Place Award Cross Country League Finals">
             <figcaption>The 3rd Place Medal I won For League Finals In Cross Country</figcaption>
           <img src="https://lh3.googleusercontent.com/-GexU_DZxTP8/VzUlMZjhKAI/AAAAAAAAFP0/Gb5EdAMGyjUxP88V7rAa8kGr1pC_nPPCACK8B/s512/2016-05-12.jpg" alt="10th Place Award Cross Country County Finals">
@@ -173,5 +141,32 @@ function openCity(evt, cityName) {
               <figcaption>A Golden Retriever Puppy</figcaption>
           </figure>
       </body>
+</div>
+
+<div id="Hobbies" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France. dog</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+      </style> 
 
   </html>
